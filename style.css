@@ -10,24 +10,24 @@
     text-align: center;
     padding-top: 20px;
 }
-
+/* Styles the message container */
 #msg{
     text-align:center;
     color: red;
     display: none;
     margin-bottom: 20px;
 }
-
+/* Styles the items container */
 #items{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+/* Styles for single items */
 .singleItem{
     cursor: pointer;
 }
-
+/* Styles for the details container */
 #details{
     display: flex;
     justify-content: center;
