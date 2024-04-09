@@ -13,15 +13,18 @@ details.innerHTML = ""
             const items = document.getElementById("items")
             items.innerHTML = ""
             if (data.meals == null) {
-                // Displys message if no meals were found
+                // Dispalys message if no meals were found
                 document.getElementById("msg").style.display = "block"
             } else {
                 document.getElementById("msg").style.display = "none"
                 console.log(data.meals)
                 data.meals.forEach(meal => {
+                    // Create a div for each meal item
                     itemDiv = document.createElement("div")
                     itemDiv.className = "m-2 singleItem"
+                    // Add click event listener to show details of the meal
                     itemDiv.setAttribute('onclick', `details('${meal.idMeal}')`)
+                // Constructs HTML for each meal item
                     let itemInfo = `
                     <div class="card" style="width: 12rem;">
                        <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
@@ -40,7 +43,9 @@ details.innerHTML = ""
 
 })
 
+// Function to fetch and display details of a meal
 function details(id) {
+    // Fetch details of the meal by its ID
     console.log(id)
     fetch(`https:www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
         .then(res => res.json())
@@ -50,6 +55,7 @@ function details(id) {
             let details = document.getElementById("details")
             details.innerHTML = ""
             let detailsDiv = document.createElement("div")
+            // Constructs HTML for the details
             let detailsInfo = `
                 <div class="card" style="width: 19rem;">
                        <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
@@ -70,7 +76,7 @@ function details(id) {
                        </div>
                 </div>
         `
-
+// Sets the HTML content of the details div
         detailsDiv.innerHTML = detailsInfo
         details.appendChild(detailsDiv)
         })
