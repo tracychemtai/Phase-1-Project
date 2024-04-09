@@ -1,13 +1,19 @@
+// Add event listener to search button
 document.getElementById("button").addEventListener('click', () => {
+    // Get value from the input field
     let inputValue = document.getElementById('inputName').value
+    // Get details container element
     let details = document.getElementById("details")
 details.innerHTML = ""
+// Fetch data from mealsDB API
     fetch(`https:www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
         .then(response => response.json())
         .then(data => {
+            // Get items container element
             const items = document.getElementById("items")
             items.innerHTML = ""
             if (data.meals == null) {
+                // Displys message if no meals were found
                 document.getElementById("msg").style.display = "block"
             } else {
                 document.getElementById("msg").style.display = "none"
