@@ -5,277 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Network</title>
-    <script src="index.js"></script>
+    <!-- CSS files -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header class="row container">
-        <a href="#" class="logo">
-            <img src="./images/img 2.jpeg" alt="Logo">
-        </a>
-        <div class="toggleMenu" onclick="toggleMenu();"></div>
-        <nav class="navigation row">
-            <ul class="primary-links row">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- End Navigation -->
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container row">
-            <div class="hero content">
-                <div class="content">
-                    <div class="content">
-                        <div class="recipe img"><img src="images/img 20.jpg" alt="Trending Recipe">
-                            <h1>Spaghetti and Meatballs.</h1>
-                            <p>Spaghetti and meatballs is a comforting classic food that contains tender meatballs <br>
-                                in a rich  tomato sauce served with spaghetti.</p>
-                               
-                        </div>
-
-
-                        <div class="time-row">
-                            <div class="row">
-                                <img src="images/img 4.jpg" alt="30 minutes">`
-                                <p>30 minutes</p>
-                            </div>
-                        </div>
-                        <div class="profile btn row">
-                            <div class="profile row">
-                                <div class="p-img row"><img src="images/img 21.jpg" alt="Chef"></div>
-                                <div class="column">
-                                    <h6>Tracy Chemtai</h6>
-                                    <p>8 April 2024</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="hero btn row">
-                        <a href="https://youtu.be/s_oG46LTyLI">View Recipe</a>
-                    </div>
-
-                </div>
+    <div class="container">
+        <h1 class="headName">Food Network</h1>
+        <form action="" class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="inputName" placeholder="Search for a meal..." aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button">Search</button>
             </div>
+        </form>
+
+        <div id="msg">
+            <h3>We don't have the food you gave us. Please look for something else...</h3>
         </div>
 
-    </section>
+        <div id="details"></div>
 
-    <!-- End Hero Section -->
+        <div id="items"></div>
 
-    <!-- Category -->
-    <section class="category container">
-        <div class="category title row">
-            <h2>Categories</h2>
-            <a href="a" class="categories btn">View all Categories</a>
-        </div>
-
-        <div class="categories cards column">
-            <a href="#" class="category-card">
-                <img src="./images/img 1.jpg" alt="Breakfast">
-                <h6>Breakfast</h6>
-            </a>
-
-            <div class="categories cards column">
-                <a href="#" class="category-card">
-                    <img src="./images/img 5.webp" alt="Vegan">
-                    <h6>Vegan</h6>
-                </a>
-
-                <div class="categories cards column">
-                    <a href="#" class="category-card">
-                        <img src="./images/img 6.webp" alt="Meat">
-                        <h6>Meat</h6>
-                    </a>
-
-                    <div class="categories cards column">
-                        <a href="#" class="category-card">
-                            <img src="./images/img 7.webp" alt="Dessert">
-                            <h6>Dessert</h6>
-                        </a>
-
-                        <div class="categories cards column">
-                            <a href="#" class="category-card">
-                                <img src="./images/img 8.jpg" alt="Lunch">
-                                <h6>Lunch</h6>
-                            </a>
-
-                            <div class="categories cards column">
-                                <a href="#" class="category-card">
-                                    <img src="./images/img 9.jpeg" alt="Dinner">
-                                    <h6>Dinner</h6>
-                                </a>
-
-                                <div class="categories cards column">
-                                    <a href="#" class="category-card">
-                                        <img src="./images/img 10.png" alt="Special Diets">
-                                        <h6>Special Diets</h6>
-                                    </a>
-                                </div>
-    </section>
-    <!-- End Category -->
-
-    <!-- Recipes -->
-    <section class="recipes container">
-        <div class="section title">
-            <h2>Simple And Tasty Recipes.</h2>
-            <p>Here are some simple and different recipes. </p>
-
-            <div class="recipes cards column">
-                <a href="a" class="card">
-                    <img src="./images/img 11.jpg" alt="Burger">
-                    <h5>Big and Juicy Beef Cheeseburger</h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 12.jpg" alt="Rice and Beef Stew">
-                    <h5> Spicy Rice and Beef Stew</h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 13.jpeg" alt="Lasagna">
-                    <h5> Lasagna</h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 14.jpeg" alt="Steak">
-                    <h5> Steak</h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 15.jpeg" alt="Pancakes">
-                    <h5> Chocolate Chip Pancakes </h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 16.jpg" alt="Cinammon Oats">
-                    <h5> Cinammon Oats </h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 17.jpeg" alt="Biscoff Tiramisu">
-                    <h5> Biscoff Tiramisu </h5>
-                </a>
-
-                <a href="a" class="card">
-                    <img src="./images/img 18.jpg" alt="Chocolate Cake">
-                    <h5> Chocolate Cake </h5>
-                </a>
-
-            </div>
-    </section>
-    <!-- End Recipes-->
-
-    <!-- Learn -->
-    <section class="learn row container">
-        <div class="learn-content">
-            <div>
-                <h2>Everyone can be a chef in their own kitche n.</h2>
-                <p>Discover useful tips and techniques to enhance your cooking skills</p>
-                <a href="#" class="learn-btn">Learn More</a>
-            </div>
-        </div>
-        <img src="images/img 19.jpg" alt="Chef">
-    </section>
-    <!-- End Learn -->
-
-    <!-- Try -->
-    <section class="try container">
-        <div class="try-content-now">
-            <h2>Ty this delicious recipes to make your day.</h2>
-        </div>
-
-        <div class="try-cards column"></div>
-        <a href="a" class="card">
-            <img src="./images/img 11.jpg" alt="Burger">
-            <h5>Big and Juicy Beef Cheeseburger</h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 12.jpg" alt="Rice and Beef Stew">
-            <h5> Spicy Rice and Beef Stew</h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 13.jpeg" alt="Lasagna">
-            <h5> Lasagna</h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 14.jpeg" alt="Steak">
-            <h5> Steak</h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 15.jpeg" alt="Pancakes">
-            <h5> Chocolate Chip Pancakes </h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 16.jpg" alt="Cinammon Oats">
-            <h5> Cinammon Oats </h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 17.jpeg" alt="Biscoff Tiramisu">
-            <h5> Biscoff Tiramisu </h5>
-        </a>
-
-        <a href="a" class="card">
-            <img src="./images/img 18.jpg" alt="Chocolate Cake">
-            <h5> Chocolate Cake </h5>
-        </a>
-    </section>
-    <!-- End Try -->
-
-    <!-- Subscribe -->
-    <section class="subscribe row container">
-        <div class="section-title">
-            <h2>Stay updated.</h2>
-            <p>Subscribe to our newsletter to receive the latest recipes cooking tips and special offers straight to
-                your inox</p>
-        </div>
-        <div class="subscribe input row">
-            <div class="row">
-                <input type="email" name="" id="" placeholder="Your email address..">
-                <a href="#" class="sub-btn">Subscribe</a>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Subscribe -->
-
-    <!-- Footer -->
-    <footer class="container">
-        <div class="footer-content row">
-            <a href="#" class="logo">
-                <img src="./images/img 2.jpeg" alt="Logo">
-            </a>
-        </div>
-        <ul class="row">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <br>
-        <div class="footer-links row">
-            <p class="copy-rights">&copy; 2024. All rights reserved</p>
-
-        </div>
-
-
-    </footer>
-    <!-- End Footer -->
+    </div>
 </body>
+
+<script src="index.js"></script>
 
 </html>
