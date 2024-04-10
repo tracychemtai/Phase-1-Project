@@ -13,3 +13,8 @@ https://github.com/tracychemtai/Phase-1-Project
 * JavaScript
 * MealsDB API
 
+# Usage
+To use the app, navigate to http://localhost:5500/ 
+The app will fetch and display details of meals in the recipe app by using MealsDB API.
+
+
