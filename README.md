@@ -7,5 +7,10 @@ Tracy Chemtai.
 ## Live Link
 https://github.com/tracychemtai/Phase-1-Project
 
+# Technogies Used
+HTML
+CSS
+JavaScript
+MealsDB API
 
 
