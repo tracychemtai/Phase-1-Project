@@ -4,5 +4,8 @@ This project is a simple web application that fetches and displays details of me
 ## Creators Name
 Tracy Chemtai.
 
+## Live Link
+https://github.com/tracychemtai/Phase-1-Project
+
 
 
