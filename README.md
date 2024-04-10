@@ -8,9 +8,8 @@ Tracy Chemtai.
 https://github.com/tracychemtai/Phase-1-Project
 
 # Technogies Used
-HTML
-CSS
-JavaScript
-MealsDB API
-
+* HTML
+* CSS
+* JavaScript
+* MealsDB API
 
